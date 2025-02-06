@@ -23,13 +23,7 @@ The **Network Checker Tool** is a Python-based application designed to monitor a
 Here are some previews of the Network Checker Tool in action:
 
 ### 📌 Main Interface
-![Main Interface](images/main_interface.png)
-
-### 📌 Live Graphs
-![Live Graphs](images/live_graphs.png)
-
-## 🛠️ Installation
-To install and run the **Network Checker Tool**, follow these steps:
+![Main Interface](Screenshot 2024-02-25 205918.png)
 
 ## 📌 How It Works
 1. **Launch the application** and select the parameters to monitor.
