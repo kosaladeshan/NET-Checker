@@ -1,6 +1,5 @@
 # NET-Checker
 Python-Based Network Monitoring Tool
-![Network Checker Banner](Screenshot 2024-02-25 205918.png)
 
 ## 📌 Introduction
 The **Network Checker Tool** is a Python-based application designed to monitor and analyze network performance. It features a **PyQt5** front-end and utilizes **Matplotlib** for real-time data visualization. This tool helps users diagnose network issues by measuring key network parameters.
