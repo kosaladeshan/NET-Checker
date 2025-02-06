@@ -1,0 +1,7 @@
+PyQt5
+psutil
+requests
+subprocess32 ; python_version < '3.0'
+subprocess ; python_version >= '3.0'
+pyqtgraph
+matplotlib

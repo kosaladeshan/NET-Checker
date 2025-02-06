@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>830</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ActionsContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>NetPro</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="Maximized" stdset="0">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="topbar">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>811</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Quicksand</family>
+       <pointsize>28</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Net Checker</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>0</y>
+       <width>131</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="body">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>69</y>
+      <width>801</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>791</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::West</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab1">
+      <attribute name="title">
+       <string>Dashboard</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>0</y>
+         <width>771</width>
+         <height>621</height>
+        </rect>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Jitter&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="currentIndex">
+        <number>5</number>
+       </property>
+       <widget class="QWidget" name="dash_tab1">
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <attribute name="title">
+         <string>Bandwidth</string>
+        </attribute>
+        <widget class="QGraphicsView" name="graphicsView">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>761</width>
+           <height>441</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="dash_tab2">
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <attribute name="title">
+         <string>Latency</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>10</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check latency</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_2">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>310</y>
+           <width>701</width>
+           <height>251</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QGraphicsView" name="graphicsView_2">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>70</y>
+           <width>701</width>
+           <height>192</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="dash_tab3">
+        <attribute name="title">
+         <string>Jitter</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>10</y>
+           <width>121</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check Jitter</string>
+         </property>
+        </widget>
+        <widget class="QGraphicsView" name="graphicsView_6">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>641</width>
+           <height>192</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_3">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>340</y>
+           <width>641</width>
+           <height>192</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Data Usage</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>20</y>
+           <width>121</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check Data Usage</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_4">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>310</y>
+           <width>641</width>
+           <height>192</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QProgressBar" name="progressBar_2">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>120</y>
+           <width>501</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Packet Loss</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>20</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check Packet Loss</string>
+         </property>
+        </widget>
+        <widget class="QGraphicsView" name="graphicsView_4">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>50</y>
+           <width>641</width>
+           <height>151</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_5">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>330</y>
+           <width>631</width>
+           <height>192</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Throughput</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>20</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check Throughput</string>
+         </property>
+        </widget>
+        <widget class="QProgressBar" name="progressBar_3">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>130</y>
+           <width>421</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_6">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>320</y>
+           <width>681</width>
+           <height>192</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
